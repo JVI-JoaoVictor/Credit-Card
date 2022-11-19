@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Credit Card</title>
+
+    <link rel="stylesheet" href="./card.css">
+    <link rel="stylesheet" href="./form.css">
+
+  </head>
+
+  <body>
+    <section>
+      
+    </div>
+    <div id="card-front">
+      <img src="./svg/images/bg-card-front.png" alt="Card Front" />
+    </div>
+    <div id="card-back">
+      <img src="./svg/images/bg-card-back.png" alt="Card Back" />
+    </div>
+    <div id="card-logo">        
+        <img src="./svg/images/card-logo.svg" alt="Card Logo" />    
+        
+    <div class="card-info">
+      <div class="card-number">0000 0000 0000 0000</div>
+      
+
+      <div class="card-holder">        
+        <div class="value">JOÃO COSTA</div>
+      </div>
+
+      <div class="card-extra">
+        <div class="card-expiration-month">
+          <div class="value">00</div>
+        </div>
+        <div class="br">/</div>
+        <div class="card-expiration-year">
+          <div class="value">00</div>
+        </div>
+
+        <div class="card-security">
+          <div class="value">000</div>
+        </div>
+      </div>
+    </div>      
+  </section>
+
+  <form  action="" id="forms">
+    <div class="input-wrapper">
+      <label for="name-card">NOME DO TITULAR</label>
+      <input id="name-card" required minlength="4" maxlength="20" placeholder="Digite o seu nome">
+    </div>
+
+    <div class="input-wrapper">
+      <label for="number-card">NÚMERO DO CARTÃO</label>
+      <input id="number-card"  required maxlength="21" placeholder="Digite o número do seu cartão">
+    </div>
+
+    <div class="flex">
+      <div class="input-wrapper">
+        <label for="expiration-card">EXP. DATA (MM/AA)</label>
+        <div class="flex-expiration">
+          <input class="expiration-card-mm" required  minlength="2" maxlength="2" placeholder="MM">
+          <input class="expiration-card-yy" required  minlength="2" maxlength="2" placeholder="AA">
+        </div>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="security-card">CVC</label>
+        <input class="security-card"  required minlength="3" maxlength="4" placeholder="302"/>
+      </div>
+    </div>
+    <a href="/sucess.html"><button id="card-confirm" type="button">Confirme</button></a>
+    
+
+  </form>
+  
+  <script src="/valid.js"></script>
+  
+  <script src="/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+
+  <script>
+    new Cleave('#number-card', {
+      creditCard: true,
+      blocks: [4, 4, 4, 4],
+      uppercase: true
+    });
+  
+   
+  </script>
+
+  </body>
+</html>
+

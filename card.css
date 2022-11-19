@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image:url(./svg/images/bg-main-desktop.png);
+  background-repeat: no-repeat;  
+  display: flex;
+  font-size: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  
+}
+#card-logo{  
+  position: relative;
+  top: -24rem;
+  left: 12rem;  
+  
+}
+
+#card-front{
+  display: flex;
+  position: relative;
+  top: 5rem;
+  left: 10rem;
+}
+
+#card-back{
+  display: flex;
+  position: relative;
+  top: 7rem;
+  left: 16rem;
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+
+ color: white;
+
+ text-transform: uppercase;
+ 
+}
+
+.card-number{
+  position: relative;
+  top: 3rem;
+  font-size: 26px;
+  letter-spacing: .2rem;
+  
+  text-transform: uppercase;
+
+}
+
+.card-holder{
+  position: relative;
+  top: 5rem;
+  letter-spacing: .1rem;
+  
+}
+
+.card-expiration-month{
+  position: relative;
+  top: 3.5rem;
+  left: 20rem;
+}
+
+.card-expiration-year{
+  position: relative;
+  top: .61rem;
+  left: 22.4rem;
+}
+
+.br{
+  position: relative;
+  top: 1.9rem;
+  left: 21.7rem;
+}
+
+.card-security{
+  position: relative;
+  top: 11.3rem;
+  left: 26rem;
+  letter-spacing: .1rem;
+}
